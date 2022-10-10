@@ -23,7 +23,6 @@ public class Game
             {
                 player1.setChoice(scn.nextLine().toUpperCase());
                 Game.PlayRockPaperScissors(player1,playerCPU);
-
             }
             else
             {

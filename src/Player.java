@@ -11,10 +11,20 @@ public class Player
         this.name = name;
     }
 
-    public int score = 0;
 
+    private int score;
 
-  private String choice;
+    public void setScore(int score)
+    {
+       this.score += score;
+    }
+
+    public int getScore()
+    {
+        return score;
+    }
+
+    private String choice;
 
     public String getChoice()
     {

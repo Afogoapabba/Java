@@ -2,7 +2,9 @@ import java.util.Random;
 
 public class Fist
 {
-
+    static final String rock = "ROCK";
+    static final String paper = "PAPER";
+    static final String scissor = "SCISSOR";
 
 
     public String Play()
@@ -13,15 +15,15 @@ public class Fist
 
         if (input == 0)
         {
-            output = "ROCK";
+            output = rock;
         }
         else if (input == 1)
         {
-            output = "PAPER";
+            output = paper;
         }
         else
         {
-            output = "SCISSOR";
+            output = scissor;
         }
         return output;
 

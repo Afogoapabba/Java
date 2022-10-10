@@ -22,12 +22,12 @@ public class RockPaperScissors
                 if (cpu.getChoice().equals("SCISSOR"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Wins!");
-                    player.score +=1;
+                    player.setScore(1);
                 }
                 else if (cpu.getChoice().equals("PAPER"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Lose!");
-                    cpu.score +=1;
+                    cpu.setScore(1);
                 }
                 else
                 {
@@ -38,12 +38,12 @@ public class RockPaperScissors
                 if (cpu.getChoice().equals("ROCK"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Wins!");
-                    player.score +=1;
+                    player.setScore(1);
                 }
                 else if (cpu.getChoice().equals("SCISSOR"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Lose!");
-                    cpu.score +=1;
+                    cpu.setScore(1);
                 }
                 else
                 {
@@ -54,12 +54,12 @@ public class RockPaperScissors
                 if (cpu.getChoice().equals("PAPER"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Wins!");
-                    player.score +=1;
+                    player.setScore(1);
                 }
                 else if (cpu.getChoice().equals("ROCK"))
                 {
                     System.out.println(cpu.getName()+" picked "+cpu.getChoice()+", "+player.getName()+" Lose!");
-                    cpu.score +=1;
+                    cpu.setScore(1);
                 }
                 else
                 {
@@ -70,17 +70,17 @@ public class RockPaperScissors
                 System.out.println("Bad input!, valid inputs are 'rock', 'paper,'scissors");
 
         }
-        System.out.println(player.getName()+" : "+player.score);
-        System.out.println(cpu.getName()+" : "+cpu.score);
+        System.out.println(player.getName()+" : "+player.getScore());
+        System.out.println(cpu.getName()+" : "+cpu.getScore());
 
         System.out.println(" Best of 3, play again!");
 
-        if (player.score >= 3 || cpu.score >=3)
+        if (player.getScore() >= 3 || cpu.getScore() >=3)
         {
             playing = false;
 
             String winner;
-            if (player.score > cpu.score)
+            if (player.getScore() > cpu.getScore())
             {
                 winner = player.getName();
             }
