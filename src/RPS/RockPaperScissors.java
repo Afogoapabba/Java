@@ -1,4 +1,4 @@
-
+package RPS;
 
 public class RockPaperScissors
 {
